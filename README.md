@@ -1,1 +1,1 @@
-# WoT2
+https://sksavin.github.io/WoT2/

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+  <body>
+
+ 
+    <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #12874D">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Мир ужасов</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#head2">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.kinopoisk.ru/lists/movies/top_100_horrors_by_best_horror_movies/?utm_referrer=www.google.com" target="_blank">Топ-100 фильмов</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html" target="_self">История жанра</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./market.html" target="_self">Выбрать фильм</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reg.html">Регистрация</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./form.html" target="_self">Форма</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+      
+        <style>
+        
+            .card-body{
+                background-color: #b6c38a;
+                border-radius: 20px;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top: 10px;
+                width: 700px;
+                
+            }
+            div.card{
+                align-items: center; 
+                padding-top: 20px;
+            }
+        </style>
+
+<div class='container-fluid'>
+    <div class="card">
+        <div class="card-body">
+            <h3 align="center">Поделись мнением о последнем фильме ужасов, который ты смотрел!</h3>
+            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <input type="hidden"  name="q" value="search">
+                <p>Имя Фамилия <input type="Text" name="name_lastname" size=20  value="Илья Родионов"></p>
+                <p>Возраст <input type="Number" name="age" size=20 value="22"></p>
+                <p>Откуда ты
+                    <input type="Text" name="place" value="Москва">
+                </p>
+                <p>Что за фильм? <input tupe="Text" name="film" value="Астрал 2"></p>
+                <p>Твоя общая оценка фильму
+                    <input type="Radio" name="score" value="1" unchecked >1
+                    <input type="Radio" name="score" value="2" unchecked >2
+                    <input type="Radio" name="score" value="3" unchecked >3
+                    <input type="Radio" name="score" value="4" unchecked >4
+                    <input type="Radio" name="score" value="5" unchecked >5
+                    <input type="Radio" name="score" value="6" unchecked >6
+                    <input type="Radio" name="score" value="7" checked >7
+                    <input type="Radio" name="score" value="8" unchecked >8
+                    <input type="Radio" name="score" value="9" unchecked >9
+                    <input type="Radio" name="score" value="10" unchecked >10
+                </p>
+                <p>Что не понравилось?
+                    <input type="Checkbox" name="experience"  value="special_effects" unchecked>Спецэффекты
+                    <input type="Checkbox"  name="experience"   value="plot" checked>Сюжет
+                    <input type="Checkbox" name="experience" value="acting" checked>Игра актеров
+                    <input type="Checkbox" name="experience"  value="atmospere" unchecked>Атмосфера
+                    <input type="Checkbox" name="experience"  value="sound" checked>Звуковое сопровождение
+                    <input type="Checkbox" name="experience"  value="visual" unchecked>Визуал
+                </p>
+            
+                <p>Порекомендовал ли друзьям?
+                    <select name="recomendation">
+                        <OPTION value="Определенно да! Один из лучших фильмов: которые я видел">Определенно да! Один из лучших фильмов: которые я видел</OPTION>
+                        <OPTION value="Нет, не стоит потраченного времени">Нет, не стоит потраченного времени</OPTION>
+                    </select>
+                </p>
+            
+                <p> Напиши общий отзыв
+                    <br>
+                    <TEXTAREA cols=50 rows=4 name="textarea" >Писать отзыв тут</TEXTAREA>
+                </p>
+            
+                <p>Когда смотрел? <input type="date" name="user_date"  value='2023-11-11'></p>
+                <p>Пароль, для создания аккаунта на нашем форуме <input type="Password" name="password" size=9  value="12345678"></p>
+            
+               
+            
+                <p>
+                    <input type="Reset"  name="Reset"  value="Обновить">
+                    <input type="Submit" name="Submit"  value="Отправить">
+                </p>
+        </div>
+    </div>
+</div>
+
+
+    <a href="./index.html#top">На главную</a>
+</form>
+</body>
+</html>
